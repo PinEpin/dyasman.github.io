@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYASMAN K.T.D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="alert('Selamat Datang di Website Saya || Dyasman K.T.D')">
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="nama">
+        <h3>Dyasman Kevin T.D</h3>
+        <h3>F52120042</h3>
+    </div>
+    <div class="garis"></div>
+    <h2 class="h3">Form Pendaftaran</h2>
+    <ul>
+        <li>
+            <a href="index.html">Form 1</a>
+        </li>
+        <br>
+        <li>
+          <a href="#">Form 2</a>
+        </li>
+      <br>
+      <li>
+          <a href="#">Form 3</a>
+      </li>
+    </ul>
+</div>
+
+<!-- Page Content -->
+<div class="content">
+
+    <div class="box">
+        <h1>Form Pendaftaran 1</h1> 
+        <table>
+        
+            <tr>
+                <td>Nama Depan</td>
+                <td>:</td>
+                <td><input type="text"></td> 
+            </tr>
+        
+            <tr>
+                <td>Nama Belakang</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+        
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="username"></td>
+            </tr>
+        
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password"></td>
+            </tr>
+        
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+        
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date"></td>
+            </tr>
+        
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    Laki-laki <input type="radio" name="JK" value="Laki-laki">
+                    Perempuan <input type="radio" name="JK" value="Perempuan">
+                </td>
+            </tr>
+        
+            <tr>
+                <td>No.Telepon</td>
+                <td>:</td>
+                <td><input type="number"></td>
+            </tr>
+        
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea></textarea></td>
+            </tr>
+        
+            <tr>
+                <td>Foto 3x4</td>
+                <td>:</td>
+                <td><input type="file" name="gambar"></td>
+            </tr>
+        
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit" name="kirim" onclick="kirim()">Kirim</button> 
+                    <button type="reset" name="batal" onclick="batal()">Batal</button>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
+<div class="clear"></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function kirim() {
+     Swal.fire(
+        'Akun terverifikasi!',
+        'Loading...',
+        'success'
+    )
+    }
+    </script>
+    <script>
+        function batal() {
+         Swal.fire(
+            'Penginputan data dibatalkan!',
+            'Loading...',
+            'warning'
+        )
+        }
+        </script>
+</body>
+</html>
